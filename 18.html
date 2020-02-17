@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>18. Duplicates Remover</title>
+</head>
+<body>
+	<script>
+		const kota = ['Jakarta', 'Aceh', 'Malang', 'Medan', 'Bontang', 'Jogja', 'Jakarta', 'Bandung', 'Malang', 'Solo', 'Palembang', 'Bandung'];
+    	const result = DuplicatesRemover(kota);
+    	function DuplicatesRemover(kota){
+    		let unique = {};
+    		kota.forEach(function(i){
+    			if(!unique[i]){
+    				unique[i] = true;
+    			}
+    		});
+    		return Object.keys(unique);
+    	}
+    	DuplicatesRemover(kota);
+    	console.log(result);
+    	document.write(result);
+	</script>
+</body>
+</html>

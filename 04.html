@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>04. Kabisat</title>
+</head>
+<body>
+	<script>
+		var tahunKabisat = prompt('Input Tahun','');
+		var tahun = tahunKabisat;
+		if( (0 == tahun % 4) && (0 != tahun % 100) || (0 == tahun % 400) ){
+			document.write('Kabisat');  
+		} else{
+			document.write('Bukan Kabisat');  
+		}
+	</script>
+</body>
+</html>

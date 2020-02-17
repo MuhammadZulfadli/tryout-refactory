@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>17. Bubble Sort</title>
+</head>
+<body>
+    <script>
+        var bubble = [1, 3, 4, 1, 201, 100, 4, 7, 42, 85, 12, 538, 13, 104, 31, 76, 46];
+        function bubbleSort(bubble) {
+            var sortir;
+            do {
+                sortir = false;
+                for (var i=0; i < bubble.length-1; i++) {
+                    if (bubble[i] > bubble[i+1]) {
+                        var temp = bubble[i];
+                        bubble[i] = bubble[i+1];
+                        bubble[i+1] = temp;
+                        sortir = true;
+                    }
+                }
+            } while (sortir);
+        }
+        bubbleSort(bubble);
+        console.log(bubble);
+        document.write(bubble + ' ');
+    </script>
+</body>
+</html>

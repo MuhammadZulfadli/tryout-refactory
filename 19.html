@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>19. Fungsi Rekursif</title>
+</head>
+<body>
+	<script>
+		function rekursif(n){
+			if( n === 0 ){
+				return;
+			}
+			console.log(n);
+			rekursif(n-1);
+		}
+		rekursif(prompt('Input Angka'));
+
+	</script>
+</body>
+</html>

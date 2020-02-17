@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>05. Film rating</title>
+</head>
+<body>
+	<script>
+		var usia = prompt('Berapa usia Kamu?', '');
+		var rating = '';
+
+    		if (usia >= 21){
+        		rating = 'Dewasa'
+    		} else if(usia >= 13) {
+        		rating = 'Remaja'
+    		} else if(usia >= 9) {
+        		rating = 'Bimbingan Orang Tua'
+    		} else if (usia <= 9) {}{
+        		rating = 'Semua  Usia'
+    		}
+    	document.write(` ${rating}`);
+	</script>
+</body>
+</html>

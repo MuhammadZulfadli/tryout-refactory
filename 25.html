@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>25. Linear Search</title>
+</head>
+<body>
+	<script>
+		function linearSearch(data, cari) {
+			var hasil = 'Tidak Ada';
+			for (var i = 0, len = data.length; i < len; i++) {
+				if (data[i] === cari) {
+					hasil = i;
+				}
+			} return hasil;
+		}
+
+    const fruits = ['Anggur', 'Durian', 'Tomat', 'Bengkoang', 'Jeruk', 'Pepaya', 'Jambu', 'Manggis', 'Kelapa', 'Timun',]
+    var result = linearSearch(fruits, prompt('Input Buah'));
+    console.log(result);
+    document.write('Index Ke: ' + result );
+	</script>
+</body>
+</html>
